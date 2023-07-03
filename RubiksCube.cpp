@@ -161,7 +161,41 @@ RubiksCube &RubiksCube::invert(MOVE ind) {
 
 void RubiksCube::print() const {
     cout << "Rubik's Cube:\n\n";
-
+    /* Color wise:
+     *
+     *          W W W
+     *          W W W
+     *          W W W
+     *
+     *  G G G   R R R   B B B   O O O
+     *  G G G   R R R   B B B   O O O
+     *  G G G   R R R   B B B   O O O
+     *
+     *          Y Y Y
+     *          Y Y Y
+     *          Y Y Y
+     *
+     * Row and Column Numberings:
+     * rx -> row numbering
+     * cx -> column numbering
+     * bx -> both row and column numbering
+     *
+     *             b0 c1 c2
+     *             r1  .  .
+     *             r2  .  .
+     *
+     *  b0 c1 c2   b0 c1 c2   b0 c1 c2   b0 c1 c2
+     *  r1  .  .   r1  .  .   r1  .  .   r1  .  .
+     *  r2  .  .   r2  .  .   r2  .  .   r2  .  .
+     *
+     *             b0 c1 c2
+     *             r1  .  .
+     *             r2  .  .
+     *
+     */
+    /*
+     * first print up
+     */
     for (int row = 0; row <= 2; row++) {
         for (unsigned i = 0; i < 7; i++) cout << " ";
         for (int col = 0; col <= 2; col++) {
@@ -171,6 +205,11 @@ void RubiksCube::print() const {
     }
 
     cout << "\n";
+
+
+    /*
+     * now print left, front right back
+     */
 
     for (int row = 0; row <= 2; row++) {
 
@@ -196,6 +235,11 @@ void RubiksCube::print() const {
     }
 
     cout << "\n";
+
+
+    /*
+     * finally print down
+     */
 
     for (int row = 0; row <= 2; row++) {
         for (unsigned i = 0; i < 7; i++) cout << " ";

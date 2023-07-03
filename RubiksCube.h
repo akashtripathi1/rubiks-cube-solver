@@ -41,7 +41,7 @@ class RubiksCube{
         B, BPRIME, B2
 
     };
-}
+
 
 
     /*
@@ -181,6 +181,6 @@ class RubiksCube{
 
     uint8_t getCornerOrientation(uint8_t ind) const;
 };
-
+}
 
 #endif //RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H
