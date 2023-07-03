@@ -1,9 +1,6 @@
 //
 // Created by AKASH on 7/3/2023.
 //
-//
-// Created by Lakshya Mittal on 17-02-2022.
-//
 
 #ifndef RUBIKS_CUBE_SOLVER_PATTERNDATABASE_H
 #define RUBIKS_CUBE_SOLVER_PATTERNDATABASE_H
