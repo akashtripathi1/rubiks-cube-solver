@@ -1,5 +1,5 @@
-
-// Created by Akash Tripathi
+//
+// Created by AKASH on 7/2/2023.
 //
 #include "RubiksCube.h"
 
