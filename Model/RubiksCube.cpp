@@ -160,7 +160,7 @@ RubiksCube &RubiksCube::invert(MOVE ind) {
 }
 
 void RubiksCube::print() const {
-    cout << "Rubik's Cube:\n\n";
+    cout << "Rubik's Cube:\n \n";
     /* Color wise:
      *
      *          W W W

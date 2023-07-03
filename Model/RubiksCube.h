@@ -17,15 +17,16 @@ class RubiksCube{
     enum class FACE {
         UP,
         LEFT,
-        RIGHT,
         FRONT,
-        DOWN,
-        BACK
+        RIGHT,
+        BACK,
+        DOWN
+
     };
 
     enum class COLOR{
         WHITE,
-        GREEN, 
+        GREEN,
         RED,
         BLUE,
         ORANGE,
@@ -181,6 +182,6 @@ class RubiksCube{
 
     uint8_t getCornerOrientation(uint8_t ind) const;
 };
-}
+
 
 #endif //RUBIKS_CUBE_SOLVER_RUBIKSCUBE_H

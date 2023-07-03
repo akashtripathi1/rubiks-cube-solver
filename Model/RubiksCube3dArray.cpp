@@ -11,7 +11,7 @@ private:
         char temp_arr[3][3] = {};
         for (int i=0;i<3;i++){
             for (int j=0;j<3;j++){
-                temp_arr[i][j] = =cube[ind][i][j]
+                temp_arr[i][j] = cube[ind][i][j];
             }
         }
         for (int i = 0; i < 3; i++) cube[ind][0][i] = temp_arr[2 - i][0];
